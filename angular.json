@@ -21,15 +21,13 @@
                         ],
                         "tsConfig": "tsconfig.app.json",
                         "assets": [
-                            "src/favicon.ico",
+                            "src/assets/favicon.ico",
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.css"
+                            "src/styles.sass"
                         ],
-                        "scripts": [
-                            "../node_modules/epubjs/build/epub.js"
-                        ]
+                        "scripts": []
                     },
                     "configurations": {
                         "production": {
@@ -89,11 +87,9 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.css"
+                            "src/styles.sass"
                         ],
-                        "scripts": [
-                            "../node_modules/epubjs/build/epub.js"
-                        ]
+                        "scripts": []
                     }
                 }
             }

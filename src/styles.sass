@@ -1,0 +1,106 @@
+$bg-color: #1A1A1A
+$bg-color-secondary: #272727
+
+$primary-color: #168FFF
+$primary-color-hover: #45A5FF
+$primary-color-active: #1272CC
+$border-primary-color: #193248
+$background-primary-color: #192530
+
+$content-1: #E8E8E8
+$content-2: #BABABA
+$content-3: #767676
+$border-secondary-color: #313131
+$background-secondary-color: #272727
+
+$warning-color: #FF9F2D
+$warning-color-hover: #FFB257
+$warning-color-active: #CC7F24
+$border-warning-color: #48351E
+$background-warning-color: #30271B
+$danger-color: #F74141
+$danger-color-hover: #F96767
+$danger-color-active: #C63434
+$border-danger-color: #462222
+$background-danger-color: #301D1D
+$success-color: #17CB49
+$success-color-hover: #45D56D
+$success-color-active: #12A23A
+$border-success-color: #1A3E24
+$background-success-color: #192B1E
+
+$border-color: #313131
+$border-primary-color: #193248
+$text-color: #FFFFFF
+$text-secondary: #E8E8E8
+$border-radius: 8px
+
+$font-family: 'Inter', sans-serif
+
+body
+    font-family: $font-family
+    background-color: $bg-color-secondary
+    color: $text-color
+    margin: 0
+
+::-webkit-scrollbar
+    width: 5px
+    height: 5px
+    border-radius: 5px 5px 5px 5px
+
+/* Track */
+::-webkit-scrollbar-track
+    background: transparent
+    border-radius: 5px 5px 5px 5px
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    background: #9F9F9F
+    border-radius: 5px 5px 5px 5px
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+    background: #9F9F9F
+
+.text-color
+    color: $text-color !important
+.text-secondary
+    color: $text-secondary !important
+.text-primary
+    color: $primary-color !important
+
+.bg-color
+    background-color: $bg-color !important
+.bg-primary
+    background-color: $primary-color !important
+.bg-secondary
+    background-color: $bg-color-secondary !important
+
+.border
+    border: 1px solid $border-color !important
+
+.border-primary
+    border: 1px solid $primary-color !important
+
+.border-secondary
+    border: 1px solid $border-secondary-color !important
+
+.border-warning
+    border: 1px solid $warning-color !important
+
+.border-danger
+    border: 1px solid $danger-color !important
+
+.rounded
+    border-radius: $border-radius !important
+
+@import 'sass-components/typography'
+@import 'sass-components/dialog'
+@import 'sass-components/buttons'
+@import 'sass-components/menu'
+@import 'sass-components/scaffolder'
+@import 'sass-components/inputs'
+@import 'sass-components/card'
+@import 'sass-components/tabs'
+@import 'sass-components/tables'
+@import 'sass-components/navigation'
