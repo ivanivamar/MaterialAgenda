@@ -1,0 +1,104 @@
+[debug] [2023-09-02T12:37:59.011Z] ----------------------------------------------------------------------
+[debug] [2023-09-02T12:37:59.012Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ivani\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-02T12:37:59.013Z] CLI Version:   12.5.2
+[debug] [2023-09-02T12:37:59.013Z] Platform:      win32
+[debug] [2023-09-02T12:37:59.013Z] Node Version:  v18.17.1
+[debug] [2023-09-02T12:37:59.014Z] Time:          Sat Sep 02 2023 14:37:59 GMT+0200 (hora de verano de Europa central)
+[debug] [2023-09-02T12:37:59.014Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-02T12:37:59.020Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-02T12:37:59.021Z] > authorizing via signed-in user (themasterrg@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ivani\repos\MaterialReader
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-02T12:38:07.823Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-02T12:38:08.332Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-09-02T12:38:08.333Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project root-hangout-373011 (My First Project) 
+[info] 
+=== Firestore Setup
+[debug] [2023-09-02T12:38:11.150Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/root-hangout-373011/services/firestore.googleapis.com [none]
+[debug] [2023-09-02T12:38:11.150Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/root-hangout-373011/services/firestore.googleapis.com x-goog-quota-user=projects/root-hangout-373011
+[debug] [2023-09-02T12:38:11.960Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/root-hangout-373011/services/firestore.googleapis.com 200
+[debug] [2023-09-02T12:38:11.960Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/root-hangout-373011/services/firestore.googleapis.com [omitted]
+[debug] [2023-09-02T12:38:11.960Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default) [none]
+[debug] [2023-09-02T12:38:12.208Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default) 200
+[debug] [2023-09-02T12:38:12.208Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default) {"name":"projects/root-hangout-373011/databases/(default)","uid":"bc363bb5-db70-400e-a9d4-084e20dc90c4","createTime":"2023-09-02T12:32:48.488234Z","updateTime":"2023-09-02T12:32:48.488234Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-09-02T12:32:48.488234Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"INuuwOf4i4EDMMah3+n3i4ED"}
+[debug] [2023-09-02T12:38:12.209Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-09-02T12:38:12.209Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-02T12:38:12.209Z] > authorizing via signed-in user (themasterrg@gmail.com)
+[debug] [2023-09-02T12:38:12.209Z] [iam] checking project root-hangout-373011 for permissions ["firebase.projects.get"]
+[debug] [2023-09-02T12:38:12.209Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/root-hangout-373011:testIamPermissions [none]
+[debug] [2023-09-02T12:38:12.209Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/root-hangout-373011:testIamPermissions x-goog-quota-user=projects/root-hangout-373011
+[debug] [2023-09-02T12:38:12.209Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/root-hangout-373011:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-02T12:38:12.868Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/root-hangout-373011:testIamPermissions 200
+[debug] [2023-09-02T12:38:12.869Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/root-hangout-373011:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-09-02T12:38:14.484Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/root-hangout-373011/releases pageSize=10&pageToken=
+[debug] [2023-09-02T12:38:14.781Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/root-hangout-373011/releases 200
+[debug] [2023-09-02T12:38:14.782Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/root-hangout-373011/releases {"releases":[{"name":"projects/root-hangout-373011/releases/cloud.firestore","rulesetName":"projects/root-hangout-373011/rulesets/c56e2d94-ba9c-4dd6-9a3c-427b9b46869a","createTime":"2023-09-02T12:32:54.886595Z","updateTime":"2023-09-02T12:32:54.886595Z"},{"name":"projects/root-hangout-373011/releases/firebase.storage/root-hangout-373011.appspot.com","rulesetName":"projects/root-hangout-373011/rulesets/00981c2b-9145-4a26-a456-c3c78b4d4855","createTime":"2023-09-02T12:35:53.983635Z","updateTime":"2023-09-02T12:35:53.983635Z"}]}
+[debug] [2023-09-02T12:38:14.782Z] Found ruleset: projects/root-hangout-373011/rulesets/c56e2d94-ba9c-4dd6-9a3c-427b9b46869a
+[debug] [2023-09-02T12:38:14.782Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/root-hangout-373011/rulesets/c56e2d94-ba9c-4dd6-9a3c-427b9b46869a [none]
+[debug] [2023-09-02T12:38:15.570Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/root-hangout-373011/rulesets/c56e2d94-ba9c-4dd6-9a3c-427b9b46869a 200
+[debug] [2023-09-02T12:38:15.570Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/root-hangout-373011/rulesets/c56e2d94-ba9c-4dd6-9a3c-427b9b46869a [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-09-02T12:38:17.031Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-09-02T12:38:17.033Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-09-02T12:38:17.292Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-09-02T12:38:17.292Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-09-02T12:38:17.299Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-09-02T12:38:17.299Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/root-hangout-373011/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/root-hangout-373011/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2023-09-02T12:38:29.531Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-02T12:38:29.604Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-02T12:38:29.604Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.1","browserURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\ivani\repos\MaterialReader 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=506418492&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-09-02T12:38:49.967Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-09-02T12:38:49.967Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-09-02T12:38:50.254Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-09-02T12:38:50.254Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-09-02T12:38:50.264Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-09-02T12:38:50.606Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-09-02T12:38:50.606Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ivanivamar","id":28646492,"node_id":"MDQ6VXNlcjI4NjQ2NDky","avatar_url":"https://avatars.githubusercontent.com/u/28646492?v=4","gravatar_id":"","url":"https://api.github.com/users/ivanivamar","html_url":"https://github.com/ivanivamar","followers_url":"https://api.github.com/users/ivanivamar/followers","following_url":"https://api.github.com/users/ivanivamar/following{/other_user}","gists_url":"https://api.github.com/users/ivanivamar/gists{/gist_id}","starred_url":"https://api.github.com/users/ivanivamar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ivanivamar/subscriptions","organizations_url":"https://api.github.com/users/ivanivamar/orgs","repos_url":"https://api.github.com/users/ivanivamar/repos","events_url":"https://api.github.com/users/ivanivamar/events{/privacy}","received_events_url":"https://api.github.com/users/ivanivamar/received_events","type":"User","site_admin":false,"name":"Ivan Ivanov","company":"Wellness","blog":"ivanivamar.esy.es","location":"Barcelona, Spain","email":"ivanivamar99@gmail.com","hireable":null,"bio":"Web developer and programmer.","twitter_username":null,"public_repos":24,"public_gists":0,"followers":2,"following":0,"created_at":"2017-05-12T08:52:55Z","updated_at":"2023-09-02T12:38:50Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":19337,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as ivanivamar 
+[info] 
